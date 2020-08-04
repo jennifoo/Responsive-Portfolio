@@ -123,7 +123,6 @@ footer .row {
   align-items: center;
 }
 
-@media all and (max-width: 768px){
   #hero:before {
     content: '';
     position: fixed;
@@ -132,7 +131,7 @@ footer .row {
     display: block;
     width: 50%;
     height: 100%;
-    background-image: url(images/jennifer2.jpg);
+    background-image: url(../images/jennifer2.jpg);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
@@ -145,8 +144,6 @@ footer .row {
     #hero:before {
       background-image: none;
     }
-
-  }
   .intro-pic {
     display: block;
   }

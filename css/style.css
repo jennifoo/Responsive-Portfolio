@@ -1,4 +1,4 @@
-/* Global */
+/* Global Elements */
 h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
@@ -6,7 +6,6 @@ h2, h3, h4, h5, h6 {
   margin-right: 0;
   margin-left: 0;
 }
-
 .sticky {
   position: sticky;
   top: 80px;
@@ -17,12 +16,10 @@ h2, h3, h4, h5, h6 {
   padding: 0;
 }
 p { margin-top: 25px; }
-
-
 img { max-width: 100%; }
 
-/* Navigation */
 
+/* Navigation */
 nav.navbar {
   position: sticky;
   top: 0;
@@ -38,14 +35,7 @@ nav.navbar {
 }
 
 
-/* Interior Pages */
-.interior {
-  margin-top: 50px;
-}
-
-
-/* HERO */
-
+/* Home Incl Hero */
 .grid {
   color: #333;
   font-size: 60px;
@@ -55,6 +45,19 @@ nav.navbar {
 #hero h1 {
   font-size: 100pt;
   line-height: 1;
+}
+#hero:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/jennifer2.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
 }
 .align-self-center {
     -webkit-align-self: center;
@@ -70,8 +73,7 @@ nav.navbar {
 }
 
 
-/* Featured Project */
-
+/* Home Featured Project */
 #featured-project {
   display: flex;
   align-items: center;
@@ -80,8 +82,7 @@ nav.navbar {
 }
 
 
-/* Recent Project */
-
+/* Home Recent Project */
 #recent-project {
   color: #333;
 }
@@ -96,10 +97,18 @@ padding: 75px 0 0;
 }
 .rp img { margin-bottom: 25px; }
 
-/* Recent + Featured */
+
+/* Home Recent + Featured */
 #recent-project img, #featured-project img {
   max-width: 100%;
 }
+
+
+/* Interior Pages */
+.interior {
+  margin-top: 50px;
+}
+
 
 /* Footer */
 footer {
@@ -123,27 +132,15 @@ footer .row {
   align-items: center;
 }
 
-  #hero:before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 50%;
-    display: block;
-    width: 50%;
-    height: 100%;
-    background-image: url(../images/jennifer2.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
-  }
 
-  @media all and (max-width: 768px){
-    #hero {
-      position: initial;
-    }
-    #hero:before {
-      background-image: none;
-    }
+/* Media Query */
+@media all and (max-width: 768px){
+  #hero {
+    position: initial;
+  }
+  #hero:before {
+    background-image: none;
+  }
   .intro-pic {
     display: block;
   }
@@ -160,4 +157,11 @@ footer .row {
   #featured-project img {
     width: 100%;
   }
+}
+
+@media all and (max-width: 375px){
+#hero h1 {
+  font-size: 55pt;
+}
+
 }

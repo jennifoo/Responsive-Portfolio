@@ -21,6 +21,9 @@ h3 {
 p { margin-top: 25px; }
 img { max-width: 100%; }
 
+nav.bg-light {
+    background-color: #414142!important;
+}
 
 /* Navigation */
 nav.navbar {
@@ -31,10 +34,16 @@ nav.navbar {
 }
 #navbarNav {
   padding: 0 15px;
-  background-color: #f8f9fa;
 }
 .bg-light {
     background-color: #f8f9fa!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fee100;
 }
 
 

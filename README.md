@@ -1,8 +1,14 @@
-# Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
+# Responsive Portfolio
 
 Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. A developer would be requested to create a mobile-first application or add responsive design to an existing application.
 
-Here is the URL to view the website: https://jennifoo.github.io/Responsive-Portfolio/
+This website is a mobile-first design with a customized color palatte, with font sizes that are large enough to read, and colors don't cause eye strain.
+
+View Website: https://jennifoo.github.io/Responsive-Portfolio/
+<br>
+Github Repository: https://github.com/jennifoo/Responsive-Portfolio
+
+<img src="images/screenshot-of-website.png" alt="Jennifer portfolio website screenshot">
 
 ## Directions
 
@@ -52,12 +58,3 @@ The Bootstrap CSS Framework was used to create a mobile responsive portfolio. wi
 ### Bonus
 
 * Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URLs of the deployed applications
-
-* The URLs of the GitHub repositories

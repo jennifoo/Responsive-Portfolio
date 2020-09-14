@@ -1,10 +1,27 @@
 /* Global Elements */
-h2, h3, h4, h5, h6 {
+
+.homepage h1,
+.homepage h2,
+.homepage h3,
+.homepage h4,
+.homepage h5,
+.homepage h6 {
+  text-align: center;
   margin-bottom: 25px;
+
+}
+
+h2, h3, h4, h5, h6 {
+  text-align: left;
 }
 h3 {
   font-size: 1.5rem;
 }
+
+.btn {
+  display: inline-block;
+}
+
 .row {
   margin-right: 0;
   margin-left: 0;
@@ -18,7 +35,10 @@ h3 {
   width: 100%;
   padding: 0;
 }
-p { margin-top: 25px; }
+p {
+  margin-top: 25px;
+  text-align: left;
+}
 img { max-width: 100%; }
 
 nav.bg-light {
@@ -103,12 +123,16 @@ nav.navbar {
 }
 .rp {
 padding: 75px 0 0;
+text-align: center;
 }
-.rp {
-  text-align: center;
-}
+
 .rp img { margin-bottom: 25px; }
 
+
+.portfolio {
+  padding: 75px 0 0;
+}
+.portfolio img { margin-bottom: 25px; }
 
 /* Home Recent + Featured */
 #recent-project img, #featured-project img {

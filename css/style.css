@@ -1,4 +1,14 @@
+/* Body Classes
+ * Home = homepage
+ * Portfolio = portfolio-page
+ * Master Portfolio Descriptions = portfolio-descriptions
+*/
+
 /* Global Elements */
+
+html {
+  scroll-behavior: smooth;
+}
 
 .homepage h1,
 .homepage h2,
@@ -18,9 +28,29 @@ h3 {
   font-size: 1.5rem;
 }
 
+a {
+  color: #eee;
+  text-decoration: underline;
+}
+
 .btn {
   display: inline-block;
 }
+.btn-primary {
+  background-color: #414142;
+  border: 1px solid #414142;
+  border-radius: 0;
+}
+a.btn-primary  {
+  color: #eee;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: #f6e667;
+  border: 1px solid #f6e667;
+  color: #333;
+}
+
 
 .row {
   margin-right: 0;
@@ -51,6 +81,7 @@ nav.navbar {
   top: 0;
   height: 80px;
   z-index: 1;
+  padding: 0;
 }
 #navbarNav {
   padding: 0 15px;
@@ -58,14 +89,31 @@ nav.navbar {
 .bg-light {
     background-color: #f8f9fa!important;
 }
-
+a.navbar-brand {
+  margin: 5px;
+  margin-left: 15px;
+}
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
+    text-decoration: none;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fee100;
+    color: #f6e667;
 }
-
+/* NAV TOGGLE */
+.navbar-light .navbar-toggler {
+    color: #f6e667;
+    border-color: #f6e667;
+    border-radius: 0;
+    margin-right: 15px;
+}
+.navbar-collapse.collapse.show {
+  background-color: #414142!important;
+  border-top: 1px solid #f6e667;
+}
+button:focus {
+    outline: none;
+}
 
 /* Home Incl Hero */
 .grid {
@@ -145,6 +193,30 @@ text-align: center;
   margin-top: 50px;
 }
 
+/* Portfolio Overview Page */
+.portfolio-page .rp img, .homepage #recent-project img {
+  max-height: 250px;
+  /* 1, 2 = Distance, 3 = Spread, 4 = Size */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.portfolio-description main img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Portfolio Master Description Page */
+.portfolio-description h4 {
+  font-size: 18px;
+}
+
+.portfolio-description h2 {
+  margin: 75px 0 25px 0;
+}
+
+.portfolio-description hr {
+  margin-top: 75px;
+}
 
 /* Footer */
 footer {
@@ -166,6 +238,28 @@ footer img {
 footer .row {
   display: flex;
   align-items: center;
+}
+
+footer i {
+  color: #f6e667;
+  margin-right: 8px;
+}
+
+footer .btn-primary {
+  background-color: initial;
+  border: 1px solid #f6e667;
+  border-radius: 0;
+}
+
+footer a.btn-primary  {
+  color: #f6e667;
+  text-decoration: none;
+}
+
+footer .btn-primary:hover {
+  background-color: #f6e667;
+  border: 1px solid #f6e667;
+  color: #333;
 }
 
 

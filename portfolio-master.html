@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="portfolio-description">
+
+
+  <!-- Div Container -->
+  <div class="container-fluid">
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="images/jennifer-wong-logo.svg" alt="logotype - jennifer wong" height="57px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolio.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./portfolio-master.html#brain-juice">Brain Juice</a>
+            <a class="dropdown-item" href="./portfolio-master.html#skj-recipe-library">SKJ Recipe Library</a>
+            <a class="dropdown-item" href="./portfolio-master.html#employee-tracker">Employee Tracker</a>
+            <a class="dropdown-item" href="./portfolio-master.html#express-note-taker">Express Note Taker</a>
+            <a class="dropdown-item" href="./portfolio-master.html#weather-dashboard">Weather Dashboard</a>
+            <a class="dropdown-item" href="./portfolio-master.html#work-day-scheduler">Work Day Scheduler</a>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="images/jennifer-web-developer-resume-8.20.2020.pdf" target="_blank">View Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+<main>
+<!-- Portfolio -->
+  <div class="container w-75 portfolio">
+      <div class="row">
+        <div class="col-12">
+          <h1 style="text-align: center; margin-bottom: 50px;">Project Descriptions</h1>
+        </div>
+      </div> <!-- End Row -->
+
+<!-- SECTION -->
+<a id="brain-juice"></a>
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <hr>
+          <h2>Brain Juice</h2>
+          <img src="./images/portfolio/brain-juice.jpg" alt="api application">
+        </div>
+    </div> <!-- End Row -->
+
+    <div class="row">
+        <div class="col-6">
+              <h3>Description:</h3>
+              <p style="margin-top: 0;">Students or writers experiencing writers block can get pretty exhausted after hours and hours of work. We designed this app so that students can have a happy place to go to for relaxation and revitalizing their minds. We designed this application to provide stimulating visuals, inspirational quotes, jokes and advice that the user can browse.
+              </p><a class="btn btn-primary btn-sm" target="_blank" href="https://brainjuicing.herokuapp.com/">View Application</a>
+        </div>
+        <div class="col-6">
+              <ul>
+                <li>Servers used: Node and Express</li>
+                <li>Template Engine: Handlebars</li>
+                <li>Database: backed by SQL database with a Sequelize ORM</li>
+                <li>Utilizes GET and POST requests for retrieving and adding new data</li>
+                <li>Follows the MVC paradigm</li>
+              </ul>
+        </div>
+    </div> <!-- End Row -->
+</section>
+
+<!-- SECTION -->
+<a id="skj-recipe-library"></a>
+  <section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+              <hr style="margin-top: 75px;">
+              <h2>SKJ Recipe Library</h2>
+              <img src="./images/projects/project-api-application.png" alt="api application">
+        </div>
+    </div> <!-- End Row -->
+
+    <div class="row">
+        <div class="col-4">
+              <img src="./images/projects/project-api-application-body1.png">
+        </div>
+        <div class="col-8">
+              <h3>Description:</h3>
+              <p style="margin-top: 0;">A collaborative effort by team members, Jennifer, Kyle and Sean to design a web application based off of the user story below:</p>
+              <p>Our client, a restaurant owner asked us to build a food and beverage reference for thier wait and bar staff. Our goal was to create a mobile responsive web application that the staff can use to reference food and beverage recipes. This application is a quick and easy way for our client to search for and receive recipes "on the fly" while juggling their other duties as an employee serving at a restaurant.</p><a class="btn btn-primary btn-sm" target="_blank" href="https://jennifoo.github.io/project1/index.html">Visit Website</a>
+        </div>
+    </div> <!-- End Row -->
+</section>
+
+<!-- SECTION 1@@@ -->
+<a id="employee-tracker"></a>
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <hr>
+          <h2 style="margin-top: 75px; margin-bottom: 25px;">Employee Tracker</h2>
+          <img src="./images/portfolio/employee-tracker.png" alt="api application">
+        </div>
+    </div> <!-- End Row -->
+
+    <div class="row">
+        <div class="col-6">
+              <h3>Description:</h3>
+              <p style="margin-top: 0;">Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. In the project, the application solution is architected and built for managing a company's employees using node, inquirer, and MySQL.
+              </p><a class="btn btn-primary btn-sm" target="_blank" href="https://vimeo.com/456706895">View Application</a>
+        </div>
+        <div class="col-6">
+              <h4>The user should be able to do the following:</h4>
+              <ul>
+                <li>Add departments, roles, employees</li>
+                <li>View departments, roles, employees</li>
+                <li>Update employee roles</li>
+              </ul>
+        </div>
+    </div> <!-- End Row -->
+</section>
+
+
+
+
+<!-- SECTION 2@@@ -->
+<a id="express-note-taker"></a>
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <hr>
+          <h2>Express Note Taker</h2>
+          <img src="./images/portfolio/express-note-taker.png" alt="api application">
+        </div>
+    </div> <!-- End Row -->
+
+    <div class="row">
+        <div class="col-6">
+              <h3>Description:</h3>
+              <p style="margin-top: 0;">This application can be used to write, save, and delete notes so that the user can organize their thoughts and keep track of tasks that need to be completed. This is targetted to users who need to store information that remains persistent the next time they open the application.
+              </p><a class="btn btn-primary btn-sm" target="_blank" href="https://jennifoo-express-note-taker.herokuapp.com/">View Application</a>
+        </div>
+        <div class="col-6">
+              <h4>Technical Information</h4>
+              <ul>
+                <li>This application uses an express backend to save and retrieve note data from a JSON file.</li>
+                <li>Utilizes API routes: GET, POST and DELETE.</li>
+                <li>Utlizes the 'fs' node module.</li>
+              </ul>
+        </div>
+    </div> <!-- End Row -->
+</section>
+
+
+<!-- SECTION 3@@@ -->
+<a id="weather-dashboard"></a>
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <hr>
+          <h2>Weather Dashboard</h2>
+          <img src="./images/portfolio/weather-dashboard-1.png" alt="api application">
+        </div>
+    </div> <!-- End Row -->
+
+    <div class="row">
+        <div class="col-6">
+              <h3>Description:</h3>
+              <p style="margin-top: 0;">This weather dashboard retrieves data from another application's API and uses it to display weather data by accessing their data and functionality by making requests with specific parameters to a URL. The final application runs in the browser and feature dynamically updated HTML and CSS. The third party API named, OpenWeather API was used to retrieve weather data for cities.
+              </p><a class="btn btn-primary btn-sm" target="_blank" href="https://jennifoo.github.io/06-server-side-apis-weather-dashboard/">View Application</a>
+        </div>
+        <div class="col-6">
+              <h4>User Story:</h4>
+              <ul>
+                As a traveler I want to see the weather outlook for multiple cities so that I can plan a trip accordingly.
+              </ul>
+        </div>
+    </div> <!-- End Row -->
+</section>
+
+<!-- SECTION 4@@@ -->
+<a id="work-day-scheduler"></a>
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <hr>
+          <h2>Work Day Scheduler</h2>
+          <img src="./images/portfolio/third-party-api-work-day-scheduler.png" alt="api application">
+        </div>
+    </div> <!-- End Row -->
+
+    <div class="row">
+        <div class="col-6">
+              <h3>Description:</h3>
+              <p style="margin-top: 0;">A simple calendar application has been created that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. This app utilizes the Moment.js library to work with date and time.
+              </p><a class="btn btn-primary btn-sm" target="_blank" href="https://jennifoo.github.io/05-third-party-apis-work-day-scheduler/">View Application</a>
+        </div>
+        <div class="col-6">
+              <h4>User Story:</h4>
+              <ul>
+                As an employee with a busy schedule I want to add important events to a daily planner so that I can manage my time effectively.
+              </ul>
+        </div>
+    </div> <!-- End Row -->
+</section>
+
+
+
+
+</div><!-- End PROJECT CONTAINER -->
+</main>
+
+<!-- Footer -->
+<footer class="container-fluid">
+    <div class="vcenter">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Let's Work Together</p>
+        <a class="btn btn-primary btn-sm" href="contact.html" role="button">Contact Me</a>
+      </div>
+      <div class="col-md-6" id="footer-col-2">
+        <ul>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:jennifer.design@yahoo.com?subject=Inquiry from Developer Portfolio">Email</a></li>
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/jennifer-wong-22711268/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div> <!-- End Row -->
+    </div>
+</footer>
+
+
+</div> <!-- End Div Container -->
+
+
+</html>

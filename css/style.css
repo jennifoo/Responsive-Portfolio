@@ -219,11 +219,21 @@ text-align: center;
 }
 
 /* Footer */
+
+footer.container-fluid {
+  padding: 50px 15px 0 15px;
+}
+
 footer {
   height: 40vh;
   background-color: #333;
   color: #fff;
   margin-top: 75px;
+  padding: 50px 0 0 0;
+}
+
+footer p {
+  margin-top: 0;
 }
 footer ul {
   list-style-type: none;
@@ -237,7 +247,7 @@ footer img {
 
 footer .row {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 footer i {
